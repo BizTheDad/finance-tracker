@@ -17,7 +17,7 @@
           At stock tracking limit
         </span>
       <% end %>
-      <% if !current_user.stock_already_tracked?(@stock.ticker) %>
+      <% if current_user.stock_already_tracked?(@stock.ticker) %>
         <span class="badge badge-pill badge-secondary">
           Stock already tracked
         </span>
